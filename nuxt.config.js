@@ -8,12 +8,15 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // para importar una tipografia de google
+      { rel: 'stylesheet', href:"https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"}
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '@assets/css/main.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -36,7 +39,9 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:3000'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

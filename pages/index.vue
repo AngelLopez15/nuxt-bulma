@@ -28,7 +28,19 @@
 </template>
 
 <script>
-export default {}
+import Logo from '../components/Logo'
+export default {
+  components:{
+    Logo
+  },
+  // Paara manejar el SEO
+  head:{
+    title:'Home',
+    meta: [
+      {hid:'description', name:'description', content: 'Esta es la descripción de la página de inicio'}
+    ]
+  }
+}
 </script>
 
 <style>

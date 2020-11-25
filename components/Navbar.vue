@@ -24,7 +24,8 @@ export default {
         {titulo:'pagina2'},
         {titulo:'pagina3'},
         {titulo:'pagina4'},
-        {titulo:'pagina5'}
+        {titulo:'pagina5'},
+        {titulo:'pagina6'},
       ]
     }
   }
